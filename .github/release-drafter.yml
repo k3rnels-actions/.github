@@ -1,0 +1,61 @@
+# Configuration for Release Drafter: https://github.com/release-drafter/release-drafter
+name-template: 'Version $NEXT_MAJOR_VERSION'
+tag-template: 'v$RESOLVED_VERSION'
+version-template: '$MAJOR.$MINOR.$PATCH'
+category-template: '### $TITLE'
+
+# Emoji reference: https://gitmoji.carloscuesta.me/
+categories:
+  - title: ':boom: Breaking changes'
+    labels:
+      - breaking
+  - title: ':fire: Removed'
+    labels:
+      - removed
+  - title: ':rewind: Reverted Changes'
+    labels:
+      - revert
+      - reverted
+  - title: ':rocket: Major features and improvements'
+    labels:
+      - major-enhancement
+  - title: ':ambulance: Major bug fixes'
+    labels:
+      - major-bug
+  - title: ':wastebasket:️ Deprecated'
+    labels:
+      - deprecated
+  - title: ':tada: New features and improvements'
+    labels:
+      - enhancement
+      - feature
+  - title: ':bug: Bug Fixes'
+    labels:
+      - bug
+      - fix
+      - bugfix
+      - regression
+  - title: ':arrow_up: Dependency updates'
+    labels:
+      - dependencies # Default label used by Dependabot
+  - title: ':construction_worker: CI & build changes'
+    labels:
+      - ci
+      - build
+  - title: ':memo: Documentation updates'
+    labels:
+      - documentation
+  - title: ':white_check_mark: Tests'
+    labels:
+      - test
+      - tests
+
+exclude-labels:
+  - no-changelog
+  - skip-changelog
+  - invalid
+
+template: |
+  ## :sparkles: What's New
+
+  $CHANGES

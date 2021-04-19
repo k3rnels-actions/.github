@@ -1,0 +1,9 @@
+[[global-org-configurations]]
+= Global Org Configurations
+:toc: macro
+:toc-title:
+
+[#introduction]
+== Introduction
+
+This repository contains global configurations for the Org to keep me sane and make management easier.
