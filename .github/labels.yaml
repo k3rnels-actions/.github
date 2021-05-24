@@ -3,9 +3,12 @@
 # General Purpose Labels
 #
 # Labels applicable for the general development workflow
-- name: major-enhancement
+- name: major-feature
   color: "003F00"
   description: This PR introduces a major new feature
+  aliases:
+    - major-feature
+    - major-enhancement
 
 - name: major-bug
   color: "FF1E0D"
